@@ -1,0 +1,37 @@
+Question: what are the key things you would consider when creating/consuming an API to
+ ensure that it is secure and reliable?
+ 1-Validating Input sent by the user before persisting in our database.We can make use of 
+ validation in API in java..
+ 
+ 2-Exposing only limited data which is necessary.Sometime some apis contains password and other
+ information that need not to be shared.
+ 
+ 3-Limiting the per user request in day or any time span.
+ 
+ 4-Using Strong Authentication and Authorisation
+ ------------------------------------------------
+ 
+ 1-How will you tackle the challenge above?
+ Ans-In my understanding.First we can convert CSV input into a structure format such as a 2d array.
+ Then,we can loop through the cell and check if it contains a formula or a value.if it is a value
+ we can return the value and if it is a formula than we can calculate it by using a formula parser
+ and store the result.lastly, i have to write the calculated values into a new CSV File.
+ 
+ 2-What type of errors you would you check for?
+ Ans-Some Errors that i would check for.
+ 
+ 1-wrong Syntax for the formula.
+ 2-Circular references: When like A1=B1 and B1=A1, both return to each other.
+ 3-Wrong cell references as per CSV file.
+ 4-wrong syntax for the formula:Like +"b1"
+ 
+ 3-How might a user break your code?
+ Ans-There are many ways,User can break our code.
+ 
+ 1-By using unsupported functions or formula.
+ 2-By using incorrect cell references in formula.
+ 3-By using providing invalid data types:Non -numeric values in cells that are expected to contain
+ number.
+ 4-By inputting invalid CSV  format:Not separating with commas properly
+ 
+ 
